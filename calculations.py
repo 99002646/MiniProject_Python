@@ -74,6 +74,17 @@ class Calculations(Players):
                 new_list.append(row[7])
         return max(new_list)
     
+    def min_rating_score(self):
+        """
+        Function to return the minimum rating score.
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[7])
+        return min(new_list)
+    
 
 
     
@@ -88,3 +99,4 @@ print(DATA.sort_federation_in_asc())
 print(DATA.sort_rapid_rating_in_desc())
 print(DATA.sort_standard_rating_in_asc())
 print(DATA.max_rating_score())
+print(DATA.min_rating_score())
