@@ -107,6 +107,21 @@ class Calculations(Players):
                 new_list.append(row[8])
         return min(new_list)
     
+    def count_players_by_federation(self, federation):
+        """
+        Function to count the players by federation by passing  federation  as a parameter.
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[2])
+            count = 0
+            for x_in_row in new_list:
+                if federation == x_in_row:
+                    count += 1
+        return count
+    
 
 
     
@@ -124,3 +139,4 @@ print(DATA.max_rating_score())
 print(DATA.min_rating_score())
 print(DATA.max_blitz_score())
 print(DATA.min_blitz_score())
+print(DATA.count_players_by_federation("IM"))
