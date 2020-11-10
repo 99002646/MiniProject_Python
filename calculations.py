@@ -85,6 +85,17 @@ class Calculations(Players):
                 new_list.append(row[7])
         return min(new_list)
     
+    def max_blitz_score(self):
+        """
+        Function to return the maximum blitz rating
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[8])
+        return max(new_list)
+    
 
 
     
@@ -100,3 +111,4 @@ print(DATA.sort_rapid_rating_in_desc())
 print(DATA.sort_standard_rating_in_asc())
 print(DATA.max_rating_score())
 print(DATA.min_rating_score())
+print(DATA.max_blitz_score())
