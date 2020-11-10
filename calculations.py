@@ -8,6 +8,7 @@ class Calculations(Players):
     """
     def __init__(self, my_list):
         Players.__init__(self, my_list)
+
     def sort_names_in_asc(self):
         """
         Function to sort names in ascending order.
@@ -18,7 +19,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[1])
         return sorted(new_list)
-    
+
     def sort_titles_in_desc(self):
         """
         Function to sort players titles in descending order.
@@ -29,7 +30,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[4])
         return sorted(new_list, reverse=True)
-    
+
     def sort_federation_in_asc(self):
         """
         Function to sort the federation in ascending order.
@@ -40,7 +41,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[2])
         return sorted(new_list)
-    
+
     def sort_rapid_rating_in_desc(self):
         """
         Function to sort rapid rating descending order.
@@ -51,7 +52,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[7])
         return sorted(new_list, reverse=True)
-    
+
     def sort_standard_rating_in_asc(self):
         """
         Function to sort standadrd rating in ascending order.
@@ -62,8 +63,8 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[6])
         return sorted(new_list)
-    
-     def max_rating_score(self):
+
+    def max_rating_score(self):
         """
         Function to return the maximum rating score.
         """
@@ -73,7 +74,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[7])
         return max(new_list)
-    
+
     def min_rating_score(self):
         """
         Function to return the minimum rating score.
@@ -84,7 +85,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[7])
         return min(new_list)
-    
+
     def max_blitz_score(self):
         """
         Function to return the maximum blitz rating
@@ -95,7 +96,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[8])
         return max(new_list)
-    
+
     def min_blitz_score(self):
         """
         Function to return the minimum blitz rating
@@ -106,7 +107,7 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[8])
         return min(new_list)
-    
+
     def count_players_by_federation(self, federation):
         """
         Function to count the players by federation by passing  federation  as a parameter.
@@ -121,7 +122,7 @@ class Calculations(Players):
                 if federation == x_in_row:
                     count += 1
         return count
-    
+
     def find_players_by_dob(self, dob):
         """
         Function to return a list of all the players by a certain players
