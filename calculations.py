@@ -52,6 +52,17 @@ class Calculations(Players):
                 new_list.append(row[7])
         return sorted(new_list, reverse=True)
     
+    def sort_standard_rating_in_asc(self):
+        """
+        Function to sort standadrd rating in ascending order.
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[6])
+        return sorted(new_list)
+    
 
 
     
@@ -64,3 +75,4 @@ print(DATA.sort_names_in_asc())
 print(DATA.sort_titles_in_desc())
 print(DATA.sort_federation_in_asc())
 print(DATA.sort_rapid_rating_in_desc())
+print(DATA.sort_standard_rating_in_asc())
