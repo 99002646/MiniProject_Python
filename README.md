@@ -5,3 +5,8 @@
 ![Pylint](https://github.com/99002646/MiniProject_Python/workflows/Pylint/badge.svg?branch=main)
 
 ![Code Coverage](https://github.com/99002646/MiniProject_Python/workflows/Code%20Coverage/badge.svg?branch=main)
+
+
+
+How to run?
+>python3 players.py
