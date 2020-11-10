@@ -50,4 +50,5 @@ print(DATA.import_data())
 print(DATA.display())
 print(DATA.sort_names_in_asc())
 print(DATA.sort_titles_in_desc())
+print(DATA.sort_federation_in_asc())
 
