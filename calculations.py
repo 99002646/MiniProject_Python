@@ -139,11 +139,6 @@ class Calculations(Players):
                 if player == dob:
                     player_list.append(name_list[index])
         return player_list
-    
-
-
-    
-    
 
 DATA = Calculations('top_women_chess_players_aug_2020.csv')
 print(DATA.import_data())
