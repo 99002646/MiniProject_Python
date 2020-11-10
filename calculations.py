@@ -155,4 +155,3 @@ print(DATA.max_blitz_score())
 print(DATA.min_blitz_score())
 print(DATA.count_players_by_federation("IM"))
 print(DATA.find_players_by_dob("1976"))
-
