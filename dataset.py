@@ -43,4 +43,3 @@ class Players:
             print("Blitz rating:", row[8])
             print("\n")
         
-      
