@@ -40,6 +40,18 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[2])
         return sorted(new_list)
+    
+    def sort_rapid_rating_in_desc(self):
+        """
+        Function to sort rapid rating descending order.
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[7])
+        return sorted(new_list, reverse=True)
+    
 
 
     
@@ -51,4 +63,4 @@ print(DATA.display())
 print(DATA.sort_names_in_asc())
 print(DATA.sort_titles_in_desc())
 print(DATA.sort_federation_in_asc())
-
+print(DATA.sort_rapid_rating_in_desc())
