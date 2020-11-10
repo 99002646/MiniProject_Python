@@ -29,6 +29,18 @@ class Calculations(Players):
             for row in data:
                 new_list.append(row[4])
         return sorted(new_list, reverse=True)
+    
+    def sort_federation_in_asc(self):
+        """
+        Function to sort the federation in ascending order.
+        """
+        data = self.import_data()
+        if data:
+            new_list = []
+            for row in data:
+                new_list.append(row[2])
+        return sorted(new_list)
+
 
     
     
