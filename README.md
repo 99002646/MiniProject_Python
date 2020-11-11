@@ -8,7 +8,5 @@
 
 ![Code Coverage](https://github.com/99002646/MiniProject_Python/workflows/Code%20Coverage/badge.svg?branch=main)
 
-
-
 How to run?
->python3 players.py
+python3 players.py
